@@ -453,7 +453,7 @@ ul {
 
 @media (max-width: 500px) {
   .section-productive {
-    height: 135vh;
+    height: 150vh;
   }
 }
 .section-earlyAccess {
@@ -472,7 +472,7 @@ ul {
 
 @media (max-width: 500px) {
   .section-earlyAccess {
-    padding-bottom: 15rem;
+    height: 60vh;
   }
   .section-earlyAccess--con {
     display: flex;

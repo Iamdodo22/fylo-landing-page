@@ -24,7 +24,7 @@
 @media (max-width:500px) {
     .section-productive{
         // margin-bottom: 20rem;
-        height: 135vh;
+        height: 150vh;
     } 
  }
 .section-earlyAccess{
@@ -41,7 +41,8 @@
 }
 @media (max-width:500px) {
     .section-earlyAccess{
-        padding-bottom: 15rem;
+        // padding-bottom: 15rem;
+        height: 60vh;
         &--con{
         @include colgap;
         align-items: center;
