@@ -1,0 +1,121 @@
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    // padding: 6rem;
+    font-family: $body-font-family;
+}
+.nav-bar{
+    @include rowgap($gap:6rem);
+    font-size: 1.4rem;
+    font-family: $header-font-family;
+    color: $color-Very-Dark-Blue;
+}
+@media (max-width:500px) {
+    .nav-bar{
+        gap: 3rem;
+    }
+}
+.heading-primary{
+    font-family: $header-font-family;
+    font-size: 3rem;
+    color: $color-Very-Dark-Blue;
+    line-height: 4rem;
+}
+@media (max-width:500px) {
+    .heading-primary{
+        text-align: center;
+        font-size: 2.8rem;
+    }
+}
+.paragraph-primary{
+    font-size: 1.55rem;
+    color: $color-Very-Dark-Blue;
+}
+@media (max-width:500px) {
+    .paragraph-primary{
+        &--stay{
+            text-align: left ;
+        }
+    
+    &--centre{
+        text-align: center ;
+        // font-size: 1.rem;
+    }
+    align-self: center;
+}}
+.heading-secondary{
+    font-family: $header-font-family;
+    font-size: 1.1rem;
+    color: $color-Very-Dark-Blue;
+}
+.paragraph-secondary{
+    font-size: .6rem;
+    color: $color-Very-Dark-Blue;
+}
+.comment{
+    line-height: 2rem
+}
+.kyle-box{
+    @include colgap;
+    width: 50%;
+    background-color: $color-white;
+    border-radius: 3px;
+    box-shadow: .1rem .1rem .3rem $color-Very-Dark-Blue;
+    padding: 3rem;
+    &--row{
+        @include rowgap;
+        align-items: center;
+        &---col{
+            @include colgap($gap:.3rem);
+        }
+    }
+}
+@media (max-width:500px) {
+    .kyle-box{
+        width: 80%
+    } 
+ }
+.arrow{
+    @include rowgap;
+    align-items: center;
+    border-bottom: 1px solid $color-Moderate-Cyan;
+    align-self: flex-start;
+    transition: all .2s;
+    padding: .5rem;
+    &:hover{
+        transform: translateY(-3px);
+    }
+}
+@media (max-width:500px) {
+    .arrow{
+        align-self: center;
+    margin-bottom: 2rem;
+}
+}
+.whitee{
+    color: $color-Light-Grayish-Blue;
+    &-p{
+    color: $color-Light-Grayish-Blue;
+    width: 43%;
+    font-size: 1.4rem;
+}
+}
+@media (max-width:500px) {
+    .whitee{
+        &-p{
+            width: 100%;
+            font-size: 2rem;
+        }}
+        .col-form{
+            @include colgap;
+    }
+    .form-header{
+        @include colgap($gap:1.5rem);
+    }
+}
+
+@media (max-width:500px) {
+    .stay{
+     text-align: left;
+    } 
+ }

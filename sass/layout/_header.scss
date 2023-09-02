@@ -1,0 +1,36 @@
+.header{
+    background-color: rgba($color-Light-Grayish-Blue,.05);
+    height: 100vh;
+    margin: 6rem 6rem auto 6rem;
+    @media (max-width:500px) {
+        .header{
+            width: 100%
+        }
+    }
+    &-main{
+        @include rowgap;
+        justify-content: space-between;
+    }
+    @media (max-width:500px) {
+        &-main{
+        @include rowgap($gap:0);
+        // color: $color-Very-Dark-Blue;
+    }
+    }
+    &-sub{
+        @include rowgap($gap:10rem);
+        align-items: center;
+        margin-top: 4rem;
+        &--fileSecure{
+            @include colgap($gap:1.5rem);
+        }
+    }
+    @media (max-width:500px) {
+        &-sub{
+        @include colrev($gap:3rem);
+        &--fileSecure{
+            gap: 3rem;
+        }
+    }
+    }
+}

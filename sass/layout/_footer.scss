@@ -1,0 +1,34 @@
+.footer{
+    height: 50vh;
+    background-color: $color-Very-Dark-Blue;
+
+    &-main{
+       @include colgap;
+       margin: 0 6rem 6rem 6rem;
+       justify-content: center;
+       height: 100% 
+    }
+
+    &-sub{
+        @include rowgap($gap:20rem);
+        // justify-content: space-between;
+        align-items: flex-start;
+    }
+    @media (max-width:500px) {
+        &-sub{
+            @include colgap;
+            gap: 6rem;
+         }
+    }
+}
+@media (max-width:500px) {
+    .footer{
+        padding-top: 8rem;
+        height: 120vh;
+            &-main{
+                gap: 6rem;
+                padding-top: 5rem;
+                
+            }
+     }
+}

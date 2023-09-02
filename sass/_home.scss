@@ -1,0 +1,50 @@
+.section-productive{
+        height: 100vh;
+    padding-top: 10rem;
+    background-repeat: no-repeat;
+    background-image:
+     url(/images/bg-curve-desktop.svg);
+     background-size:350% 100%;
+     background-position:top;
+    //  filter: brightness(0.8);
+    &--cont{
+        @include rowgap($gap:6rem);
+        margin: 0 6rem;
+    }
+    @media (max-width:500px) {
+        &--cont{
+         @include colrev($gap:3rem);
+        } 
+     }
+    &--main{
+        @include colgap($gap:2rem);
+        align-items: center;
+    }
+}
+@media (max-width:500px) {
+    .section-productive{
+        // margin-bottom: 20rem;
+        height: 135vh;
+    } 
+ }
+.section-earlyAccess{
+    background-color: $color-Desaturated-Blue;
+    height: 40vh;
+    &--con{
+        height: 100%;
+        @include rowgap;
+        justify-content: space-between;
+        margin: 0 6rem;
+        align-items: center;
+    }
+
+}
+@media (max-width:500px) {
+    .section-earlyAccess{
+        padding-bottom: 15rem;
+        &--con{
+        @include colgap;
+        align-items: center;
+        justify-content: center;
+    } }
+ }

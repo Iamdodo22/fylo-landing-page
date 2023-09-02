@@ -1,0 +1,33 @@
+.btn{
+    &-blue{
+        padding: 1rem 3.5rem;
+        font-size: 1.1rem;
+        color: $color-Light-Grayish-Blue;
+        background-color: $color-Bright-Blue;
+        border: none;
+        border-radius: 2px;
+        margin-left: 1rem;
+        align-self: flex-start;
+        &--noStretch{
+            align-self: flex-start;
+            margin-left: 0;
+        }
+
+        }
+
+        @media (max-width:500px) {
+            &-blue{
+                width: 100%;
+                margin-left: 0;
+                padding-top: 1.3rem;
+                padding-bottom: 1.3rem;
+                font-size: 1.4rem;
+                @media (max-width:500px) {
+                    &--noStretch{
+                       width: 90%;
+                       align-self: center;
+                    }
+                }
+            }
+        }
+    }
