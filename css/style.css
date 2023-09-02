@@ -454,6 +454,10 @@ ul {
 @media (max-width: 500px) {
   .section-productive {
     height: 150vh;
+    background-repeat: no-repeat;
+    background-image: url(/images/bg-curve-mobile.svg);
+    background-size: 350% 100%;
+    background-position: top;
   }
 }
 .section-earlyAccess {

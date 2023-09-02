@@ -25,6 +25,11 @@
     .section-productive{
         // margin-bottom: 20rem;
         height: 150vh;
+        background-repeat: no-repeat;
+        background-image:
+         url(/images/bg-curve-mobile.svg);
+         background-size:350% 100%;
+         background-position:top;
     } 
  }
 .section-earlyAccess{
